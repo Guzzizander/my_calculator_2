@@ -12,6 +12,11 @@ function cubo() {
   num.value=Math.pow(num.value,3);
 }
 
+function inverso() {
+  var num = document.getElementById('numero');
+  num.value=1/num.value;
+}
+
 </script>
 </head>
 
@@ -22,5 +27,6 @@ function cubo() {
   <input type="text" id="numero"><p>
   <button onclick="cuadrado()"> x<sup>2</sup> </button>
   <button onclick="cubo()"> x<sup>3</sup> </button>
+  <button onclick="inverso()"> 1/x</button>
 </body>
 </html>
