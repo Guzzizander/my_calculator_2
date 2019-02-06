@@ -2,6 +2,11 @@
 <title>Calculadora</title><meta charset="utf-8">
 <script type="text/javascript">
 
+function cuadrado() {
+  var num = document.getElementById('numero');
+  num.value=Math.pow(num.value,2);
+}
+
 function cubo() {
   var num = document.getElementById('numero');
   num.value=Math.pow(num.value,3);
@@ -15,6 +20,7 @@ function cubo() {
 <body>
   Numero:
   <input type="text" id="numero"><p>
+  <button onclick="cuadrado()"> x<sup>2</sup> </button>
   <button onclick="cubo()"> x<sup>3</sup> </button>
 </body>
 </html>
